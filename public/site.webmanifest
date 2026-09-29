@@ -1,0 +1,23 @@
+{
+  "name": "Grumpy Goat | Gear & Grinds",
+  "short_name": "Grumpy Goat",
+  "description": "Bike & ski shop, coffee house, and your basecamp for adventure in Willard, Utah.",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#2D2D2D",
+  "background_color": "#F5F0E8",
+  "display": "standalone",
+  "start_url": "/"
+}

@@ -1,0 +1,42 @@
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-lg);
+}
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(200, 150, 46, 0.12);
+  color: var(--color-gold-dark);
+  margin-bottom: var(--space-md);
+}
+
+.services__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.services__desc {
+  font-size: 0.95rem;
+  color: var(--color-charcoal-light);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
+.services__price {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gold-dark);
+}

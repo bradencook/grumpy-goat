@@ -1,0 +1,57 @@
+.gear-inventory__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.gear-inventory__image-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.gear-inventory__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.gear-inventory__img--portrait {
+  object-position: center 25%;
+}
+
+.gear-inventory__image-card:hover .gear-inventory__img {
+  transform: scale(1.03);
+}
+
+.gear-inventory__image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(transparent, rgba(26, 26, 26, 0.8));
+  color: var(--color-cream);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+}
+
+.gear-inventory__note {
+  font-size: 1.05rem;
+  color: var(--color-charcoal-light);
+  font-style: italic;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .gear-inventory__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gear-inventory__img {
+    height: 220px;
+  }
+}

@@ -1,0 +1,214 @@
+/* ===========================
+   Grumpy Goat Design System
+   =========================== */
+
+/* --- CSS Custom Properties --- */
+:root {
+  /* Brand Colors */
+  --color-gold: #C8962E;
+  --color-gold-light: #D4A94A;
+  --color-gold-dark: #A67A1E;
+  --color-plum: #4A2040;
+  --color-plum-light: #6B3560;
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #E8E0D2;
+  --color-charcoal: #2D2D2D;
+  --color-charcoal-light: #444444;
+  --color-sage: #7A8B6F;
+  --color-sage-light: #94A688;
+  --color-coffee: #5C3D2E;
+  --color-coffee-light: #7A5643;
+  --color-white: #FFFFFF;
+  --color-black: #1A1A1A;
+
+  /* Typography */
+  --font-heading: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-accent: 'Courier New', monospace;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+  --space-3xl: 8rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --nav-height: 72px;
+
+  /* Borders & Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--color-charcoal);
+}
+
+h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(2.2rem, 5vw, 3.2rem); }
+h3 { font-size: clamp(1.6rem, 3.5vw, 2.1rem); }
+h4 { font-size: clamp(1.3rem, 2.5vw, 1.5rem); }
+
+p {
+  max-width: 70ch;
+}
+
+/* --- Utility Classes --- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+.section--dark {
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+.section--dark h2,
+.section--dark h3,
+.section--dark h4 {
+  color: var(--color-cream);
+}
+
+.section--gold {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+.section--plum {
+  background-color: var(--color-plum);
+  color: var(--color-cream);
+}
+
+.section--plum h2,
+.section--plum h3,
+.section--plum h4 {
+  color: var(--color-cream);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gold { color: var(--color-gold); }
+.text-plum { color: var(--color-plum); }
+.text-sage { color: var(--color-sage); }
+.text-cream { color: var(--color-cream); }
+
+
+/* --- Mountain Divider --- */
+.mountain-divider {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.mountain-divider svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Page Transition --- */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.page {
+  animation: pageIn 0.4s ease forwards;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .section {
+    padding: var(--space-xl) 0;
+  }
+}
