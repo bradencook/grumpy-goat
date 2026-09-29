@@ -8,8 +8,8 @@ export default function Atmosphere() {
       <div className="container">
         <div className="atmosphere__grid">
           <div className="atmosphere__content">
-            <h2>{t('grinds.atmosphere.title')}</h2>
-            <p>{t('grinds.atmosphere.body')}</p>
+            <h2>{t('grind.atmosphere.title')}</h2>
+            <p>{t('grind.atmosphere.body')}</p>
           </div>
           <div className="atmosphere__images">
             <img

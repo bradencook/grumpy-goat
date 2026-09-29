@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Gear from './pages/Gear';
-import Grinds from './pages/Grinds';
+import Grind from './pages/Grind';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import FontPreview from './pages/FontPreview';
@@ -14,7 +14,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/gear" element={<Gear />} />
-          <Route path="/grind" element={<Grinds />} />
+          <Route path="/grind" element={<Grind />} />
           <Route path="/grinds" element={<Navigate to="/grind" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

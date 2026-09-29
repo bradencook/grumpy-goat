@@ -33,11 +33,11 @@ export default function MenuSection() {
   return (
     <section className="menu section">
       <div className="container">
-        <SectionHeader title={t('grinds.menu.title')} subtitle={t('grinds.menu.subtitle')} />
+        <SectionHeader title={t('grind.menu.title')} subtitle={t('grind.menu.subtitle')} />
         <div className="menu__board">
-          <MenuColumn title={t('grinds.menu.hot')} items={bySection('hot')} />
+          <MenuColumn title={t('grind.menu.hot')} items={bySection('hot')} />
           <div className="menu__divider" />
-          <MenuColumn title={t('grinds.menu.cold')} items={bySection('cold')} />
+          <MenuColumn title={t('grind.menu.cold')} items={bySection('cold')} />
         </div>
       </div>
     </section>

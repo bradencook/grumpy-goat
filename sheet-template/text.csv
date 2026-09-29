@@ -24,16 +24,16 @@ home.gear.highlight2,"MTB, Fat Bike & Paddleboard Rentals",Home: bike shop bulle
 home.gear.highlight3,"Ski & Bike Parts, Gear & Accessories",Home: bike shop bullet 3
 home.gear.highlight4,Custom Builds,Home: bike shop bullet 4
 home.gear.button,Explore Services,Home: bike shop button
-home.grinds.label,Grumpy Goat Grind,Home: small label above coffee heading
-home.grinds.title,The Coffee Shop,Home: coffee heading
-home.grinds.body,"Fuel up before the ride or wind down after. Our coffee shop serves handcrafted drinks in a cozy space where cyclists, locals, and friends gather.",Home: coffee paragraph
-home.grinds.feature1.title,Hot & Cold Drinks,Home: coffee feature 1 heading
-home.grinds.feature1.text,"Lattes, cold brew, London Fog, hot chocolate & more",Home: coffee feature 1 text
-home.grinds.feature2.title,Oat Milk Options,Home: coffee feature 2 heading
-home.grinds.feature2.text,Plant-based alternatives on every drink,Home: coffee feature 2 text
-home.grinds.feature3.title,Dog Friendly,Home: coffee feature 3 heading
-home.grinds.feature3.text,Bring your trail buddy — they’re welcome here,Home: coffee feature 3 text
-home.grinds.button,See Full Menu,Home: coffee button
+home.grind.label,Grumpy Goat Grind,Home: small label above coffee heading
+home.grind.title,The Coffee Shop,Home: coffee heading
+home.grind.body,"Fuel up before the ride or wind down after. Our coffee shop serves handcrafted drinks in a cozy space where cyclists, locals, and friends gather.",Home: coffee paragraph
+home.grind.feature1.title,Hot & Cold Drinks,Home: coffee feature 1 heading
+home.grind.feature1.text,"Lattes, cold brew, London Fog, hot chocolate & more",Home: coffee feature 1 text
+home.grind.feature2.title,Oat Milk Options,Home: coffee feature 2 heading
+home.grind.feature2.text,Plant-based alternatives on every drink,Home: coffee feature 2 text
+home.grind.feature3.title,Dog Friendly,Home: coffee feature 3 heading
+home.grind.feature3.text,Bring your trail buddy — they’re welcome here,Home: coffee feature 3 text
+home.grind.button,See Full Menu,Home: coffee button
 gear.hero.title,Grumpy Goat Gear,Gear page: banner title
 gear.services.title,Services,Gear page: services heading
 gear.services.subtitle,"From quick fixes to full overhauls, we’ll keep your ride dialed.",Gear page: services subheading
@@ -44,15 +44,15 @@ gear.inventory.subtitle,We keep the essentials in stock so you can spend more ti
 gear.inventory.card1,Apparel & Protection,Gear page: left photo caption
 gear.inventory.card2,Parts & Accessories,Gear page: right photo caption
 gear.inventory.note,Don’t see what you need? We can order it. Just ask.,Gear page: note under photos
-grinds.hero.title,Grumpy Goat Grind,Coffee page: banner title
-grinds.menu.title,Menu,Coffee page: menu heading
-grinds.menu.subtitle,"Simple drinks, made well.",Coffee page: menu subheading
-grinds.menu.hot,Hot Stuff,Coffee page: hot column title
-grinds.menu.cold,Cold Stuff,Coffee page: cold column title
-grinds.hours.title,Coffee Shop Hours,Coffee page: hours heading
-grinds.hours.subtitle,Early birds and post-ride refuels welcome.,Coffee page: hours subheading
-grinds.atmosphere.title,More Than Coffee,Coffee page: bottom section heading
-grinds.atmosphere.body,"Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grind is built for hanging out — because the best part of the ride is the stories after.",Coffee page: bottom section paragraph
+grind.hero.title,Grumpy Goat Grind,Coffee page: banner title
+grind.menu.title,Menu,Coffee page: menu heading
+grind.menu.subtitle,"Simple drinks, made well.",Coffee page: menu subheading
+grind.menu.hot,Hot Stuff,Coffee page: hot column title
+grind.menu.cold,Cold Stuff,Coffee page: cold column title
+grind.hours.title,Coffee Shop Hours,Coffee page: hours heading
+grind.hours.subtitle,Early birds and post-ride refuels welcome.,Coffee page: hours subheading
+grind.atmosphere.title,More Than Coffee,Coffee page: bottom section heading
+grind.atmosphere.body,"Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grind is built for hanging out — because the best part of the ride is the stories after.",Coffee page: bottom section paragraph
 about.hero.title,About Us,About page: banner title
 about.story.title,Our Story,About page: story heading
 about.story.p1,"Grumpy Goat started the way most good things do — with a passion for riding and a need for good coffee. What began as a small bike shop in Willard has grown into a community hub where cyclists, skiers, paddlers, and neighbors come together.",About page: story paragraph 1
@@ -64,7 +64,7 @@ contact.title,Get In Touch,Contact page: heading
 contact.subtitle,"Stop by, give us a call, or drop us a line.",Contact page: subheading
 contact.location,Location,Contact page: address card title
 contact.gearHours,Bike Shop Hours,Contact page: bike hours card title
-contact.grindsHours,Coffee Shop Hours,Contact page: coffee hours card title
+contact.grindHours,Coffee Shop Hours,Contact page: coffee hours card title
 contact.gearNote,Need a drop-off or pick-up outside regular hours? Reach out — we’re usually around.,Contact page: note under bike hours
 contact.social.title,Follow the Herd,Contact page: social heading
 contact.social.subtitle,"Trail updates, shop news, and the occasional dog photo.",Contact page: social subheading

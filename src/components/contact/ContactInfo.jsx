@@ -68,7 +68,7 @@ export default function ContactInfo() {
           </div>
 
           <div className="contact-info__card">
-            <h3>{t('contact.grindsHours')}</h3>
+            <h3>{t('contact.grindHours')}</h3>
             <HoursTable rows={hours.filter((r) => r.shop?.toLowerCase().startsWith('grind'))} mutedWhen="closed" />
           </div>
         </div>

@@ -8,7 +8,7 @@ export default function CoffeeHours() {
   return (
     <section className="coffee-hours section">
       <div className="container">
-        <SectionHeader title={t('grinds.hours.title')} subtitle={t('grinds.hours.subtitle')} />
+        <SectionHeader title={t('grind.hours.title')} subtitle={t('grind.hours.subtitle')} />
         <div className="coffee-hours__table-wrapper">
           <table className="coffee-hours__table">
             <tbody>

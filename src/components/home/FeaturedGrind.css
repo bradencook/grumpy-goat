@@ -1,11 +1,11 @@
-.featured-grinds__grid {
+.featured-grind__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-2xl);
   align-items: center;
 }
 
-.featured-grinds__label {
+.featured-grind__label {
   font-family: var(--font-accent);
   font-size: 1rem;
   color: var(--color-coffee);
@@ -15,31 +15,31 @@
   margin-bottom: var(--space-sm);
 }
 
-.featured-grinds__content h2 {
+.featured-grind__content h2 {
   margin-bottom: var(--space-md);
 }
 
-.featured-grinds__content > p {
+.featured-grind__content > p {
   font-size: 1.05rem;
   color: var(--color-charcoal-light);
   line-height: 1.7;
   margin-bottom: var(--space-lg);
 }
 
-.featured-grinds__features {
+.featured-grind__features {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
   margin-bottom: var(--space-xl);
 }
 
-.featured-grinds__feature {
+.featured-grind__feature {
   display: flex;
   gap: var(--space-md);
   align-items: flex-start;
 }
 
-.featured-grinds__feature-icon {
+.featured-grind__feature-icon {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
@@ -51,51 +51,51 @@
   border-radius: var(--radius-sm);
 }
 
-.featured-grinds__feature h4 {
+.featured-grind__feature h4 {
   font-size: 1rem;
   margin-bottom: 0.15rem;
 }
 
-.featured-grinds__feature p {
+.featured-grind__feature p {
   font-size: 0.9rem;
   color: var(--color-charcoal-light);
 }
 
-.featured-grinds__images {
+.featured-grind__images {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--space-md);
 }
 
-.featured-grinds__img {
+.featured-grind__img {
   border-radius: var(--radius-md);
   object-fit: cover;
   box-shadow: var(--shadow-md);
 }
 
-.featured-grinds__img--main {
+.featured-grind__img--main {
   height: 420px;
   width: 100%;
 }
 
-.featured-grinds__img--accent {
+.featured-grind__img--accent {
   height: 420px;
   width: 100%;
   object-position: center;
 }
 
 @media (max-width: 768px) {
-  .featured-grinds__grid {
+  .featured-grind__grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
 
-  .featured-grinds__images {
+  .featured-grind__images {
     grid-template-columns: 1fr 1fr;
   }
 
-  .featured-grinds__img--main,
-  .featured-grinds__img--accent {
+  .featured-grind__img--main,
+  .featured-grind__img--accent {
     height: 240px;
   }
 }
