@@ -1,4 +1,4 @@
-# Grumpy Goat — Gear & Grinds
+# Grumpy Goat — Gear & Grind
 
 Website for Grumpy Goat, bike & ski shop + coffee house in Willard, UT.
 React + Vite static site. All text comes from a Google Sheet Spencer can edit; photos live in `public/images/`.
@@ -34,7 +34,7 @@ Already done for the live sheet. Renaming a tab is safe (gids don't change). Del
 - **text tab**: only edit the `value` column. The `key` is how the site finds each spot, and `where` says where it shows up.
 - Blank value = hidden (a bullet, a paragraph, a social link).
 - List tabs: add, remove, or reorder rows freely. Site order follows sheet order.
-- `hours.shop` is `gear` or `grinds`. `menu.section` is `hot` or `cold`.
+- `hours.shop` is `gear` or `grind`. `menu.section` is `hot` or `cold`.
 - `icon` columns take one of: `bike tire cog wrench hammer suspension target mountain ski snowflake waves trees leaf sun coffee dog paw handshake heart people apparel package sparkles star`. More can be added in `src/components/common/Icon.jsx` from [lucide.dev](https://lucide.dev/icons).
 
 ### Adding a new text field in code
@@ -57,8 +57,8 @@ From the shoot (originals in `~/Desktop/GG photos`), resized to ≤2400px for we
 | Home: Coffee shop | `coffee-bar.jpg`, `lounge-spencer-dog.jpg` | DSC07300, 07277 |
 | Gear banner | `tool-wall.jpg` | DSC07142 |
 | Gear: Gear & Accessories | `shop-aisle.jpg`, `shop-through-wheel.jpg` | DSC07180, 07183 |
-| Grinds banner | `coffee-bar-mural.jpg` | DSC07296 |
-| Grinds: More Than Coffee | `lounge-couch.jpg`, `trail-dog-rider.jpg` | DSC07316, 07456 |
+| Grind banner | `coffee-bar-mural.jpg` | DSC07296 |
+| Grind: More Than Coffee | `lounge-couch.jpg`, `trail-dog-rider.jpg` | DSC07316, 07456 |
 | About banner | `trail-mountains.jpg` | DSC07375 |
 | About: Our Story | `spencer-portrait.jpg`, `trail-dog.jpg` | DSC07257, 07477 |
 | Contact banner | `storefront-vintage-bike.jpg` | DSC07100 |
@@ -122,7 +122,7 @@ src/
     common/Icon.jsx         icon-name -> lucide icon map (used by sheet "icon" columns)
     common/SocialIcons.jsx  Instagram / Facebook / Strava links (hidden if blank)
     ...
-  pages/                Home, Gear, Grinds, About, Contact (+ /fonts dev preview)
+  pages/                Home, Gear, Grind, About, Contact (+ /fonts dev preview)
 scripts/export-sheet.mjs  npm run sheet:template -> sheet-template/*.csv
 sheet-template/           CSVs + importable .xlsx for the Google Sheet
 ```

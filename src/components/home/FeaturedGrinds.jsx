@@ -33,7 +33,7 @@ export default function FeaturedGrinds() {
                 );
               })}
             </div>
-            <Link to="/grinds">
+            <Link to="/grind">
               <Button variant="dark">{t('home.grinds.button')}</Button>
             </Link>
           </div>

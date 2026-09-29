@@ -63,13 +63,13 @@ export default function ContactInfo() {
 
           <div className="contact-info__card">
             <h3>{t('contact.gearHours')}</h3>
-            <HoursTable rows={hours.filter((r) => r.shop === 'gear')} mutedWhen="by appointment" />
+            <HoursTable rows={hours.filter((r) => r.shop?.toLowerCase() === 'gear')} mutedWhen="by appointment" />
             {t('contact.gearNote') && <p className="contact-info__note">{t('contact.gearNote')}</p>}
           </div>
 
           <div className="contact-info__card">
             <h3>{t('contact.grindsHours')}</h3>
-            <HoursTable rows={hours.filter((r) => r.shop === 'grinds')} mutedWhen="closed" />
+            <HoursTable rows={hours.filter((r) => r.shop?.toLowerCase().startsWith('grind'))} mutedWhen="closed" />
           </div>
         </div>
       </div>

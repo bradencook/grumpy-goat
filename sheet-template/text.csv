@@ -1,6 +1,6 @@
 key,value,where
 site.name,Grumpy Goat,Business name
-site.tagline,Gear & Grinds,Shown under the name everywhere
+site.tagline,Gear & Grind,Shown under the name everywhere
 site.description,"Bike & ski shop, coffee house, and your basecamp for adventure in Willard, Utah.",Footer blurb + homepage hero
 site.phone,(385) 434-9999,Phone number
 site.email,spencer@grumpygoat.bike,Email address
@@ -24,7 +24,7 @@ home.gear.highlight2,"MTB, Fat Bike & Paddleboard Rentals",Home: bike shop bulle
 home.gear.highlight3,"Ski & Bike Parts, Gear & Accessories",Home: bike shop bullet 3
 home.gear.highlight4,Custom Builds,Home: bike shop bullet 4
 home.gear.button,Explore Services,Home: bike shop button
-home.grinds.label,Grumpy Goat Grinds,Home: small label above coffee heading
+home.grinds.label,Grumpy Goat Grind,Home: small label above coffee heading
 home.grinds.title,The Coffee Shop,Home: coffee heading
 home.grinds.body,"Fuel up before the ride or wind down after. Our coffee shop serves handcrafted drinks in a cozy space where cyclists, locals, and friends gather.",Home: coffee paragraph
 home.grinds.feature1.title,Hot & Cold Drinks,Home: coffee feature 1 heading
@@ -44,7 +44,7 @@ gear.inventory.subtitle,We keep the essentials in stock so you can spend more ti
 gear.inventory.card1,Apparel & Protection,Gear page: left photo caption
 gear.inventory.card2,Parts & Accessories,Gear page: right photo caption
 gear.inventory.note,Don’t see what you need? We can order it. Just ask.,Gear page: note under photos
-grinds.hero.title,Grumpy Goat Grinds,Coffee page: banner title
+grinds.hero.title,Grumpy Goat Grind,Coffee page: banner title
 grinds.menu.title,Menu,Coffee page: menu heading
 grinds.menu.subtitle,"Simple drinks, made well.",Coffee page: menu subheading
 grinds.menu.hot,Hot Stuff,Coffee page: hot column title
@@ -52,7 +52,7 @@ grinds.menu.cold,Cold Stuff,Coffee page: cold column title
 grinds.hours.title,Coffee Shop Hours,Coffee page: hours heading
 grinds.hours.subtitle,Early birds and post-ride refuels welcome.,Coffee page: hours subheading
 grinds.atmosphere.title,More Than Coffee,Coffee page: bottom section heading
-grinds.atmosphere.body,"Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grinds is built for hanging out — because the best part of the ride is the stories after.",Coffee page: bottom section paragraph
+grinds.atmosphere.body,"Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grind is built for hanging out — because the best part of the ride is the stories after.",Coffee page: bottom section paragraph
 about.hero.title,About Us,About page: banner title
 about.story.title,Our Story,About page: story heading
 about.story.p1,"Grumpy Goat started the way most good things do — with a passion for riding and a need for good coffee. What began as a small bike shop in Willard has grown into a community hub where cyclists, skiers, paddlers, and neighbors come together.",About page: story paragraph 1

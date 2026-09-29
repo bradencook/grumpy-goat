@@ -11,7 +11,7 @@ const samples = [
   { label: 'Hero Title', text: 'Grumpy Goat', size: 'clamp(2.5rem, 6vw, 4.5rem)' },
   { label: 'Section Header', text: 'Grumpy Goat Gear', size: 'clamp(1.8rem, 4vw, 2.5rem)' },
   { label: 'Card Title', text: 'Mountain Bike Rentals', size: '1.25rem' },
-  { label: 'Nav Link', text: 'Home   Gear   Grinds   About   Contact', size: '1rem' },
+  { label: 'Nav Link', text: 'Home   Gear   Grind   About   Contact', size: '1rem' },
 ];
 
 export default function FontPreview() {
@@ -54,7 +54,7 @@ export default function FontPreview() {
                   The Bike & Ski Shop
                 </h2>
                 <p style={{ fontFamily: font.family, fontSize: '1.1rem', color: 'var(--color-gold)', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>
-                  GEAR & GRINDS
+                  GEAR & GRIND
                 </p>
                 <p style={{ fontSize: '0.95rem', color: 'var(--color-charcoal-light)', lineHeight: 1.6 }}>
                   Expert service, quality rentals, and great coffee under one roof in Willard, Utah.

@@ -20,7 +20,7 @@
 const textRows = [
   // --- Business info (used in navbar, footer, contact page) ---
   ['site.name', 'Grumpy Goat', 'Business name'],
-  ['site.tagline', 'Gear & Grinds', 'Shown under the name everywhere'],
+  ['site.tagline', 'Gear & Grind', 'Shown under the name everywhere'],
   ['site.description', 'Bike & ski shop, coffee house, and your basecamp for adventure in Willard, Utah.', 'Footer blurb + homepage hero'],
   ['site.phone', '(385) 434-9999', 'Phone number'],
   ['site.email', 'spencer@grumpygoat.bike', 'Email address'],
@@ -46,7 +46,7 @@ const textRows = [
   ['home.gear.highlight3', 'Ski & Bike Parts, Gear & Accessories', 'Home: bike shop bullet 3'],
   ['home.gear.highlight4', 'Custom Builds', 'Home: bike shop bullet 4'],
   ['home.gear.button', 'Explore Services', 'Home: bike shop button'],
-  ['home.grinds.label', 'Grumpy Goat Grinds', 'Home: small label above coffee heading'],
+  ['home.grinds.label', 'Grumpy Goat Grind', 'Home: small label above coffee heading'],
   ['home.grinds.title', 'The Coffee Shop', 'Home: coffee heading'],
   ['home.grinds.body', 'Fuel up before the ride or wind down after. Our coffee shop serves handcrafted drinks in a cozy space where cyclists, locals, and friends gather.', 'Home: coffee paragraph'],
   ['home.grinds.feature1.title', 'Hot & Cold Drinks', 'Home: coffee feature 1 heading'],
@@ -69,8 +69,8 @@ const textRows = [
   ['gear.inventory.card2', 'Parts & Accessories', 'Gear page: right photo caption'],
   ['gear.inventory.note', 'Don’t see what you need? We can order it. Just ask.', 'Gear page: note under photos'],
 
-  // --- Grinds page ---
-  ['grinds.hero.title', 'Grumpy Goat Grinds', 'Coffee page: banner title'],
+  // --- Grind (coffee) page ---
+  ['grinds.hero.title', 'Grumpy Goat Grind', 'Coffee page: banner title'],
   ['grinds.menu.title', 'Menu', 'Coffee page: menu heading'],
   ['grinds.menu.subtitle', 'Simple drinks, made well.', 'Coffee page: menu subheading'],
   ['grinds.menu.hot', 'Hot Stuff', 'Coffee page: hot column title'],
@@ -78,7 +78,7 @@ const textRows = [
   ['grinds.hours.title', 'Coffee Shop Hours', 'Coffee page: hours heading'],
   ['grinds.hours.subtitle', 'Early birds and post-ride refuels welcome.', 'Coffee page: hours subheading'],
   ['grinds.atmosphere.title', 'More Than Coffee', 'Coffee page: bottom section heading'],
-  ['grinds.atmosphere.body', 'Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grinds is built for hanging out — because the best part of the ride is the stories after.', 'Coffee page: bottom section paragraph'],
+  ['grinds.atmosphere.body', 'Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grind is built for hanging out — because the best part of the ride is the stories after.', 'Coffee page: bottom section paragraph'],
 
   // --- About page ---
   ['about.hero.title', 'About Us', 'About page: banner title'],
@@ -103,7 +103,7 @@ const textRows = [
 export const text = Object.fromEntries(textRows.map(([key, value]) => [key, value]));
 export const textDescriptions = textRows;
 
-// shop: "gear" (bike shop) or "grinds" (coffee shop)
+// shop: "gear" (bike shop) or "grind" (coffee shop)
 export const hours = [
   { shop: 'gear', day: 'Monday', hours: 'By appointment' },
   { shop: 'gear', day: 'Tuesday', hours: 'By appointment' },
@@ -112,13 +112,13 @@ export const hours = [
   { shop: 'gear', day: 'Friday', hours: '4:00 PM - 8:00 PM' },
   { shop: 'gear', day: 'Saturday', hours: '10:00 AM - 5:00 PM' },
   { shop: 'gear', day: 'Sunday', hours: '12:00 PM - 5:00 PM' },
-  { shop: 'grinds', day: 'Monday', hours: 'Closed' },
-  { shop: 'grinds', day: 'Tuesday', hours: 'Closed' },
-  { shop: 'grinds', day: 'Wednesday', hours: 'Closed' },
-  { shop: 'grinds', day: 'Thursday', hours: 'Closed' },
-  { shop: 'grinds', day: 'Friday', hours: 'Closed' },
-  { shop: 'grinds', day: 'Saturday', hours: '9:00 AM - 5:00 PM' },
-  { shop: 'grinds', day: 'Sunday', hours: '12:00 PM - 5:00 PM' },
+  { shop: 'grind', day: 'Monday', hours: 'Closed' },
+  { shop: 'grind', day: 'Tuesday', hours: 'Closed' },
+  { shop: 'grind', day: 'Wednesday', hours: 'Closed' },
+  { shop: 'grind', day: 'Thursday', hours: 'Closed' },
+  { shop: 'grind', day: 'Friday', hours: 'Closed' },
+  { shop: 'grind', day: 'Saturday', hours: '9:00 AM - 5:00 PM' },
+  { shop: 'grind', day: 'Sunday', hours: '12:00 PM - 5:00 PM' },
 ];
 
 // icon: one of the names in src/components/common/Icon.jsx

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Gear from './pages/Gear';
@@ -14,7 +14,8 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/gear" element={<Gear />} />
-          <Route path="/grinds" element={<Grinds />} />
+          <Route path="/grind" element={<Grinds />} />
+          <Route path="/grinds" element={<Navigate to="/grind" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/fonts" element={<FontPreview />} />

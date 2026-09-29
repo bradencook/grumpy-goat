@@ -26,7 +26,7 @@ export default function Hero() {
           <Link to="/gear">
             <Button variant="primary">{t('home.hero.button1')}</Button>
           </Link>
-          <Link to="/grinds">
+          <Link to="/grind">
             <Button variant="outline-light">{t('home.hero.button2')}</Button>
           </Link>
         </div>
