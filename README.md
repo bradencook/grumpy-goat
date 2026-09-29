@@ -47,25 +47,33 @@ Already done for the live sheet. Renaming a tab is safe (gids don't change). Del
 
 ## Photos
 
-From the shoot (originals in `~/Desktop/GG photos`), resized to ≤2400px for web:
+From the shoot (originals in `~/Desktop/GG photos`), resized to ≤1600px for web (hero 2000px).
+Layout is "one big photo at a time": full-width `<PhotoBand>`s between sections, and `<Split>`
+sections (text on one side, one edge-to-edge photo on the other).
 
 | Where | File | Original |
 |---|---|---|
 | Home hero | `hero_rider.jpg` | (Braden's pick) |
-| Home: "More Than a Bike Shop" | `storefront-mountains.jpg` | DSC07110 |
-| Home: Bike shop (large / 2 small) | `shop-interior.jpg`, `shop-dog.jpg`, `spencer-wrenching.jpg` | DSC07181, 07152, 07286 |
-| Home: Coffee shop | `coffee-bar.jpg`, `lounge-spencer-dog.jpg` | DSC07300, 07277 |
+| Home: full-width after intro | `storefront-mountains.jpg` | DSC07110 |
+| Home: Bike shop split | `spencer-wrenching.jpg` | DSC07286 |
+| Home: full-width | `shop-interior.jpg` | DSC07181 |
+| Home: Coffee shop split | `lounge-spencer-dog.jpg` | DSC07277 |
+| Home: full-width before footer | `coffee-bar.jpg` | DSC07300 |
 | Gear banner | `tool-wall.jpg` | DSC07142 |
-| Gear: Gear & Accessories | `shop-aisle.jpg`, `shop-through-wheel.jpg` | DSC07180, 07183 |
+| Gear: full-width after rentals | `shop-aisle.jpg` | DSC07180 |
+| Gear: Gear & Accessories split | `shop-through-wheel.jpg` | DSC07183 |
 | Grind banner | `coffee-bar-mural.jpg` | DSC07296 |
-| Grind: More Than Coffee | `lounge-couch.jpg`, `trail-dog-rider.jpg` | DSC07316, 07456 |
+| Grind: full-width before/after "More Than Coffee" | `lounge-couch.jpg`, `trail-dog-rider.jpg` | DSC07316, 07456 |
 | About banner | `trail-mountains.jpg` | DSC07375 |
-| About: Our Story | `spencer-portrait.jpg`, `trail-dog.jpg` | DSC07257, 07477 |
+| About: Our Story split | `spencer-portrait.jpg` | DSC07257 |
+| About: full-width | `shop-dog.jpg` | DSC07152 |
 | Contact banner | `storefront-vintage-bike.jpg` | DSC07100 |
 
-To swap one, drop a new file in `public/images/` and change the `src` in the component. Banner focal points use the `focus` prop on `<PageHero>` (e.g. `focus="center 30%"`). The old placeholder images are in `_old-placeholders/` (gitignored).
+To swap one, drop a new file in `public/images/` and change the `image` prop in the page/component.
+Focal points use the `focus` prop (e.g. `focus="center 30%"`) on `<PageHero>`, `<PhotoBand>`, and `<Split>`.
+The old placeholder images are in `_old-placeholders/` (gitignored).
 
-Good unused shots if you want more: DSC07093 (storefront, portrait), DSC07130 (front door), DSC07219 (Spencer at tool wall), DSC07376 / 07464 (riding action), DSC07352 (rider portrait).
+Good unused shots if you want more: `public/images/trail-dog.jpg` (DSC07477), DSC07093 (storefront, portrait), DSC07130 (front door), DSC07219 (Spencer at tool wall), DSC07376 / 07464 (riding action), DSC07352 (rider portrait).
 
 ---
 
