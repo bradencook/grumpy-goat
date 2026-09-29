@@ -103,7 +103,7 @@ The domain's registration can stay at Squarespace. Only its DNS moves to Cloudfl
 4. Delete any old Squarespace website records in Cloudflare (A records to `198.185.159.x`/`198.49.23.x`, CNAME `www` → `ext-cust.squarespace.com`).
 5. In Squarespace → Domains → the domain → **Nameservers** → *Use custom nameservers* → enter the two Cloudflare gives you. Also turn off DNSSEC in Squarespace first if it's on.
 6. Wait for Cloudflare to say the domain is **Active** (minutes to a few hours).
-7. Pages project → **Custom domains** → add `grumpygoat.com` and `www.grumpygoat.com`. Cloudflare creates the records.
+7. Pages project → **Custom domains** → add `grumpygoat.bike` and `www.grumpygoat.bike`. Cloudflare creates the records.
 8. Send a test email to Spencer's address and reply from it to confirm mail still flows.
 9. Once the new site is live, cancel the Squarespace **website** subscription. **Don't cancel the domain**; it still renews there. (Optional: transfer the registration to Cloudflare Registrar later for at-cost renewal. Unlock the domain in Squarespace, get the auth code, then Cloudflare → Domain Registration → Transfer.)
 
