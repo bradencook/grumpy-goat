@@ -7,20 +7,26 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import FontPreview from './pages/FontPreview';
 
+export function AppRoutes() {
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/gear" element={<Gear />} />
+        <Route path="/grind" element={<Grind />} />
+        <Route path="/grinds" element={<Navigate to="/grind" replace />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/fonts" element={<FontPreview />} />
+      </Route>
+    </Routes>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/gear" element={<Gear />} />
-          <Route path="/grind" element={<Grind />} />
-          <Route path="/grinds" element={<Navigate to="/grind" replace />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/fonts" element={<FontPreview />} />
-        </Route>
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
   );
 }

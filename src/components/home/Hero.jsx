@@ -13,6 +13,7 @@ export default function Hero() {
           src="/images/hero_rider.jpg"
           alt="Mountain biker riding a dirt trail through autumn foliage, captured with motion blur"
           className="hero__image"
+          fetchPriority="high"
         />
         <div className="hero__overlay" />
       </div>

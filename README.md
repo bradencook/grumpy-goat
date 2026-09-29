@@ -109,6 +109,18 @@ The domain's registration can stay at Squarespace. Only its DNS moves to Cloudfl
 
 ---
 
+## SEO
+
+- **Page titles & Google snippets** live in `src/content/seo.js` (code, not the sheet — they rarely change).
+- **`npm run build` prerenders** every page to static HTML (`scripts/prerender.mjs`), so Google and link
+  previews see real content, per-page titles, canonical URLs, and `LocalBusiness` structured data
+  (address, phone, hours from `defaults.js`). It also writes `sitemap.xml`. Sheet edits still load on top in the browser.
+- Adding a page? Add its route in `src/App.jsx` **and** an entry in `seo.js`.
+- `public/_redirects` intentionally has **no** `/* /index.html 200` catch-all — it would override the
+  prerendered pages. Cloudflare Pages falls back to `index.html` on its own when there's no `404.html`.
+- Off-site (biggest impact for a local shop): Google Business Profile, Google Search Console (submit
+  `https://grumpygoat.bike/sitemap.xml`), Apple Business Connect, Bing Places, Yelp, Strava/Trailforks shop listings.
+
 ## Project layout
 
 ```
