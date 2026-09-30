@@ -35,7 +35,7 @@ Already done for the live sheet. Renaming a tab is safe (gids don't change). Del
 - Blank value = hidden (a bullet, a paragraph, a social link).
 - List tabs: add, remove, or reorder rows freely. Site order follows sheet order.
 - `hours.shop` is `gear` or `grind`. `menu.section` is `hot` or `cold`.
-- `icon` columns take one of: `bike tire cog wrench hammer suspension target mountain ski snowflake waves trees leaf sun coffee dog paw handshake heart people apparel package sparkles star`. More can be added in `src/components/common/Icon.jsx` from [lucide.dev](https://lucide.dev/icons).
+- `icon` columns take one of: `bike tire spoke sealant cog wrench hammer suspension shock warranty target mountain ski snowflake waves trees leaf sun coffee dog paw handshake heart people apparel package sparkles star`. More can be added in `src/components/common/Icon.jsx` from [lucide.dev](https://lucide.dev/icons).
 
 ### Adding a new text field in code
 

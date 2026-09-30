@@ -2,6 +2,7 @@ import {
   Bike, CircleDot, Coffee, Cog, Dog, Handshake, HeartHandshake, Leaf, Mountain,
   MountainSnow, PawPrint, Snowflake, Sparkles, Target, Trees, Waves, Wrench,
   ArrowDownUp, Star, Sun, Users, Hammer, Package, Shirt,
+  ShipWheel, Droplet, ShieldCheck, ChevronsDownUp,
 } from 'lucide-react';
 
 /**
@@ -33,6 +34,10 @@ const ICONS = {
   hammer: Hammer,
   package: Package,
   apparel: Shirt,
+  spoke: ShipWheel,
+  sealant: Droplet,
+  warranty: ShieldCheck,
+  shock: ChevronsDownUp,
 };
 
 export default function Icon({ name, size = 28, className = '', ...props }) {
