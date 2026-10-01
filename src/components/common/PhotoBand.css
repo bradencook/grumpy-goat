@@ -3,6 +3,10 @@
   padding-block: clamp(1.5rem, 4vw, 3.5rem);
 }
 
+.photo-band--flush {
+  padding-bottom: 0;
+}
+
 .photo-band--dark {
   background: var(--color-charcoal);
 }
@@ -84,5 +88,10 @@
 
 /* A split already ends with its own gutter */
 .split + .photo-band {
+  padding-top: 0;
+}
+
+/* A section above already ends with its own padding */
+.section + .photo-band {
   padding-top: 0;
 }

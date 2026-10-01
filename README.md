@@ -55,23 +55,22 @@ inset by the same gutter on the other).
 | Where | File | Original |
 |---|---|---|
 | Home hero | `hero_rider.jpg` | (Braden's pick) |
-| Home: "More Than a Bike Shop" (text over photo) | `storefront-mountains.jpg` | DSC07110 |
 | Home: Bike shop split | `spencer-wrenching.jpg` | DSC07286 |
 | Home: Coffee shop split | `lounge-spencer-dog.jpg` | DSC07277 |
-| Home: full-width before footer | `coffee-bar.jpg` | DSC07300 |
+| Home: full-width into footer | `storefront-mountains.jpg` | DSC07110 |
 | Gear banner | `tool-wall.jpg` | DSC07142 |
-| Gear: Gear & Accessories split | `shop-through-wheel.jpg` | DSC07183 |
+| Gear: full-width into footer | `shop-through-wheel-wide.jpg` (16:9 crop) | DSC07183 |
 | Grind banner | `trail-dog-rider.jpg` | DSC07456 |
-| Grind: "More Than Coffee" (text over photo) | `lounge-couch.jpg` | DSC07316 |
+| Grind: "More Than Coffee" (text over photo, into footer) | `lounge-couch.jpg` | DSC07316 |
 | About: Our Story split | `spencer-portrait.jpg` | DSC07257 |
-| About: "The MVP" round photo | `shop-dog.jpg` | DSC07152 |
+| About: "The MVP" snapshot | `shop-dog.jpg` | DSC07152 |
 | Contact banner | `storefront-vintage-bike.jpg` | DSC07100 |
 
 To swap one, drop a new file in `public/images/` and change the `image` prop in the page/component.
 Focal points use the `focus` prop (e.g. `focus="center 30%"`) on `<PageHero>`, `<PhotoBand>`, and `<Split>`.
 The old placeholder images are in `_old-placeholders/` (gitignored).
 
-Good unused shots if you want more: `public/images/` has `trail-dog.jpg` (DSC07477), `shop-interior.jpg` (DSC07181), `shop-aisle.jpg` (DSC07180), `coffee-bar-mural.jpg` (DSC07296), `trail-mountains.jpg` (DSC07375); also DSC07093 (storefront, portrait), DSC07130 (front door), DSC07219 (Spencer at tool wall), DSC07376 / 07464 (riding action), DSC07352 (rider portrait).
+Good unused shots if you want more: `public/images/` has `trail-dog.jpg` (DSC07477), `shop-interior.jpg` (DSC07181), `shop-aisle.jpg` (DSC07180), `coffee-bar.jpg` (DSC07300), `coffee-bar-mural.jpg` (DSC07296), `trail-mountains.jpg` (DSC07375); also DSC07093 (storefront, portrait), DSC07130 (front door), DSC07219 (Spencer at tool wall), DSC07376 / 07464 (riding action), DSC07352 (rider portrait).
 
 ---
 

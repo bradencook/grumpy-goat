@@ -19,6 +19,7 @@ export default function Grind() {
         <MenuSection />
         <CoffeeHours />
         <PhotoBand
+          flush
           image="/images/lounge-couch.jpg"
           alt="The lounge: booths, a big couch, and the shop dog napping"
         >

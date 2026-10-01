@@ -1,7 +1,7 @@
 import PageHero from '../components/gear/PageHero';
 import PricingSection from '../components/gear/PricingSection';
 import TopoSection from '../components/common/TopoSection';
-import GearSection from '../components/gear/GearSection';
+import PhotoBand from '../components/common/PhotoBand';
 import { useText } from '../content/ContentContext';
 
 export default function Gear() {
@@ -15,7 +15,11 @@ export default function Gear() {
       />
       <TopoSection>
         <PricingSection />
-        <GearSection />
+        <PhotoBand
+          flush
+          image="/images/shop-through-wheel-wide.jpg"
+          alt="Parts and accessories on the shop floor, framed through a bike wheel"
+        />
       </TopoSection>
     </div>
   );

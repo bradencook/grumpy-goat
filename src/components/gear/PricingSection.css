@@ -17,16 +17,6 @@
   border-bottom: 2px solid var(--color-gold);
 }
 
-.pricing {
-  padding-bottom: 0;
-}
-
-/* The shorter list stays in view while scrolling past the longer one */
-.pricing__col {
-  position: sticky;
-  top: calc(var(--nav-height) + var(--space-lg));
-}
-
 .pricing__list {
   display: flex;
   flex-direction: column;
@@ -77,8 +67,24 @@
   .pricing__grid {
     grid-template-columns: 1fr;
   }
+}
 
+.pricing__col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.pricing__note {
+  margin-top: var(--space-lg);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--color-charcoal-light);
+}
+
+@media (max-width: 860px) {
+  .pricing__grid,
   .pricing__col {
-    position: static;
+    gap: var(--space-xl);
   }
 }
