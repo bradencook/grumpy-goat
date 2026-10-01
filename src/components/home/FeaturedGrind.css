@@ -13,7 +13,6 @@
 }
 
 .featured-grind__content > p {
-  font-size: 1.05rem;
   color: var(--color-charcoal-light);
   line-height: 1.7;
   margin-bottom: var(--space-lg);

@@ -1,5 +1,14 @@
 .photo-band {
   margin: 0;
+  padding-block: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.photo-band--dark {
+  background: var(--color-charcoal);
+}
+
+.photo-band__frame {
+  position: relative;
   height: clamp(360px, 80vh, 880px);
   overflow: hidden;
   background: var(--color-charcoal);
@@ -12,9 +21,68 @@
   object-fit: cover;
 }
 
+.photo-band__frame--overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(20, 20, 20, 0.45), rgba(20, 20, 20, 0) 70%),
+    linear-gradient(rgba(20, 20, 20, 0.25), rgba(20, 20, 20, 0.45));
+}
+
+.photo-band__caption {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.photo-band__text {
+  max-width: 760px;
+  text-align: center;
+  color: var(--color-cream);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.photo-band__text h2 {
+  color: var(--color-cream);
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  margin-bottom: var(--space-md);
+}
+
+.photo-band__text p {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.7;
+  margin: 0 auto var(--space-md);
+}
+
 @media (max-width: 768px) {
-  .photo-band {
+  .photo-band__frame {
     height: 90vw;
     min-height: 300px;
   }
+
+  .photo-band__frame--overlay {
+    height: auto;
+    min-height: 110vw;
+  }
+
+  .photo-band__frame--overlay .photo-band__img {
+    position: absolute;
+    inset: 0;
+  }
+
+  .photo-band__frame--overlay .photo-band__caption {
+    position: relative;
+    min-height: 110vw;
+    padding: var(--space-xl) var(--space-md);
+  }
+}
+
+/* A split already ends with its own gutter */
+.split + .photo-band {
+  padding-top: 0;
 }

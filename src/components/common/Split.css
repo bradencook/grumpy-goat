@@ -1,7 +1,12 @@
+/* Photo and text share the row evenly, both inset from the screen edge by the
+   same gutter, so neither side overpowers the other. */
 .split {
+  --split-gutter: clamp(1.5rem, 4vw, 4rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: min(92vh, 860px);
+  align-items: center;
+  gap: var(--split-gutter);
+  padding: var(--split-gutter);
 }
 
 .split--dark {
@@ -10,7 +15,12 @@
 
 .split__media {
   position: relative;
-  min-height: 560px;
+}
+
+.split__frame {
+  position: relative;
+  height: min(78vh, 760px);
+  min-height: 460px;
   overflow: hidden;
 }
 
@@ -28,29 +38,36 @@
 
 .split__body {
   display: flex;
-  align-items: center;
-  padding: var(--space-2xl) clamp(1.5rem, 6vw, 6rem);
+  justify-content: center;
 }
 
 .split__inner {
-  max-width: 540px;
+  max-width: 580px;
+}
+
+.split h2 {
+  font-size: clamp(2.6rem, 4.2vw, 3.8rem);
+}
+
+.split p {
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
 }
 
 @media (max-width: 900px) {
   .split {
     grid-template-columns: 1fr;
-    min-height: 0;
+    padding: var(--space-lg) var(--space-md) var(--space-xl);
+    gap: var(--space-lg);
   }
 
-  .split__media,
   .split--reverse .split__media {
     order: 0;
-    min-height: 0;
-    aspect-ratio: 4 / 5;
-    max-height: 85vh;
   }
 
-  .split__body {
-    padding: var(--space-2xl) var(--space-md);
+  .split__frame {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    max-height: 80vh;
   }
 }

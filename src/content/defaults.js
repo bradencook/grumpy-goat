@@ -81,11 +81,14 @@ const textRows = [
   ['grind.atmosphere.body', 'Settle into a booth, catch the race on the big screen, or sprawl out on the couch with your dog. Grumpy Goat Grind is built for hanging out — because the best part of the ride is the stories after.', 'Coffee page: bottom section paragraph'],
 
   // --- About page ---
-  ['about.hero.title', 'About Us', 'About page: banner title'],
+  ['about.hero.title', 'About Us', 'About page: small label above the story heading'],
   ['about.story.title', 'Our Story', 'About page: story heading'],
   ['about.story.p1', 'Grumpy Goat started the way most good things do — with a passion for riding and a need for good coffee. What began as a small bike shop in Willard has grown into a community hub where cyclists, skiers, paddlers, and neighbors come together.', 'About page: story paragraph 1'],
   ['about.story.p2', 'We believe a great ride deserves a great cup of coffee afterward. And a well-tuned bike makes every ride better. So we put both under one roof, added a couch, turned on the race, and opened the door.', 'About page: story paragraph 2'],
   ['about.story.p3', 'The name? Well, mountain goats are stubborn, sure-footed, and thrive where others won’t go. Sound like anyone you know on the trail?', 'About page: story paragraph 3 (blank hides it)'],
+  ['about.spencer.note', 'That’s me, Spencer!', 'About page: handwritten note pointing at Spencer’s photo (blank hides it)'],
+  ['about.dog.title', 'The MVP', 'About page: handwritten heading next to the small dog photo (blank hides the dog)'],
+  ['about.dog.note', 'Most Valuable Pup. Head greeter, shop security, and official couch tester.', 'About page: note next to the small dog photo'],
   ['about.values.title', 'What We’re About', 'About page: values heading'],
 
   // --- Contact page ---

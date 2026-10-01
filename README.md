@@ -48,32 +48,30 @@ Already done for the live sheet. Renaming a tab is safe (gids don't change). Del
 ## Photos
 
 From the shoot (originals in `~/Desktop/GG photos`), resized to ≤1600px for web (hero 2000px).
-Layout is "one big photo at a time": full-width `<PhotoBand>`s between sections, and `<Split>`
-sections (text on one side, one edge-to-edge photo on the other).
+Layout is "one big photo at a time" with breathing room: full-width `<PhotoBand>`s (padded top and
+bottom, optionally with white text laid over them) and `<Split>` sections (text on one side, one photo
+inset by the same gutter on the other).
 
 | Where | File | Original |
 |---|---|---|
 | Home hero | `hero_rider.jpg` | (Braden's pick) |
-| Home: full-width after intro | `storefront-mountains.jpg` | DSC07110 |
+| Home: "More Than a Bike Shop" (text over photo) | `storefront-mountains.jpg` | DSC07110 |
 | Home: Bike shop split | `spencer-wrenching.jpg` | DSC07286 |
-| Home: full-width | `shop-interior.jpg` | DSC07181 |
 | Home: Coffee shop split | `lounge-spencer-dog.jpg` | DSC07277 |
 | Home: full-width before footer | `coffee-bar.jpg` | DSC07300 |
 | Gear banner | `tool-wall.jpg` | DSC07142 |
-| Gear: full-width after rentals | `shop-aisle.jpg` | DSC07180 |
 | Gear: Gear & Accessories split | `shop-through-wheel.jpg` | DSC07183 |
-| Grind banner | `coffee-bar-mural.jpg` | DSC07296 |
-| Grind: full-width before/after "More Than Coffee" | `lounge-couch.jpg`, `trail-dog-rider.jpg` | DSC07316, 07456 |
-| About banner | `trail-mountains.jpg` | DSC07375 |
+| Grind banner | `trail-dog-rider.jpg` | DSC07456 |
+| Grind: "More Than Coffee" (text over photo) | `lounge-couch.jpg` | DSC07316 |
 | About: Our Story split | `spencer-portrait.jpg` | DSC07257 |
-| About: full-width | `shop-dog.jpg` | DSC07152 |
+| About: "The MVP" round photo | `shop-dog.jpg` | DSC07152 |
 | Contact banner | `storefront-vintage-bike.jpg` | DSC07100 |
 
 To swap one, drop a new file in `public/images/` and change the `image` prop in the page/component.
 Focal points use the `focus` prop (e.g. `focus="center 30%"`) on `<PageHero>`, `<PhotoBand>`, and `<Split>`.
 The old placeholder images are in `_old-placeholders/` (gitignored).
 
-Good unused shots if you want more: `public/images/trail-dog.jpg` (DSC07477), DSC07093 (storefront, portrait), DSC07130 (front door), DSC07219 (Spencer at tool wall), DSC07376 / 07464 (riding action), DSC07352 (rider portrait).
+Good unused shots if you want more: `public/images/` has `trail-dog.jpg` (DSC07477), `shop-interior.jpg` (DSC07181), `shop-aisle.jpg` (DSC07180), `coffee-bar-mural.jpg` (DSC07296), `trail-mountains.jpg` (DSC07375); also DSC07093 (storefront, portrait), DSC07130 (front door), DSC07219 (Spencer at tool wall), DSC07376 / 07464 (riding action), DSC07352 (rider portrait).
 
 ---
 

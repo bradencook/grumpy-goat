@@ -3,7 +3,6 @@ import MenuSection from '../components/grind/MenuSection';
 import CoffeeHours from '../components/grind/CoffeeHours';
 import PhotoBand from '../components/common/PhotoBand';
 import TopoSection from '../components/common/TopoSection';
-import Atmosphere from '../components/grind/Atmosphere';
 import { useText } from '../content/ContentContext';
 
 export default function Grind() {
@@ -12,23 +11,21 @@ export default function Grind() {
     <div className="page">
       <PageHero
         title={t('grind.hero.title')}
-        image="/images/coffee-bar-mural.jpg"
-        alt="The Grumpy Goat coffee bar and mountain sunset mural"
-        focus="center 55%"
+        image="/images/trail-dog-rider.jpg"
+        alt="The shop dog leading a rider down the trail"
+        focus="center 60%"
       />
       <TopoSection>
         <MenuSection />
         <CoffeeHours />
+        <PhotoBand
+          image="/images/lounge-couch.jpg"
+          alt="The lounge: booths, a big couch, and the shop dog napping"
+        >
+          <h2>{t('grind.atmosphere.title')}</h2>
+          {t('grind.atmosphere.body') && <p>{t('grind.atmosphere.body')}</p>}
+        </PhotoBand>
       </TopoSection>
-      <PhotoBand
-        image="/images/lounge-couch.jpg"
-        alt="The lounge: booths, a big couch, and the shop dog napping"
-      />
-      <Atmosphere />
-      <PhotoBand
-        image="/images/trail-dog-rider.jpg"
-        alt="The shop dog leading a rider down the trail"
-      />
     </div>
   );
 }

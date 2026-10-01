@@ -1,8 +1,8 @@
 .page-hero {
   position: relative;
-  height: 40vh;
-  min-height: 300px;
-  max-height: 450px;
+  height: 58vh;
+  min-height: 380px;
+  max-height: 640px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -52,6 +52,7 @@
 
 @media (max-width: 768px) {
   .page-hero {
-    min-height: 240px;
+    height: 62vw;
+    min-height: 300px;
   }
 }

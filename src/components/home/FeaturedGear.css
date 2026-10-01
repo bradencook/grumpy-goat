@@ -15,7 +15,6 @@
 
 .featured-gear__content p {
   color: var(--color-cream-dark);
-  font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: var(--space-lg);
 }
@@ -29,7 +28,7 @@
 
 .featured-gear__highlights li {
   color: var(--color-cream-dark);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   padding-left: 1.5rem;
   position: relative;
 }
