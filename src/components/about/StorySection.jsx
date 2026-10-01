@@ -2,12 +2,12 @@ import Split from '../common/Split';
 import { useText } from '../../content/ContentContext';
 import './StorySection.css';
 
-// Hand-drawn style arrows. Each tip sits at the left edge of its SVG and
-// overlaps the photo it points at.
-const ArrowLeft = ({ className }) => (
+// Hand-drawn style arrows. Each tip sits at the edge of its SVG and stops
+// just short of the photo it points at.
+const ArrowRight = ({ className }) => (
   <svg className={`story__arrow ${className}`} viewBox="0 0 150 50" aria-hidden="true">
-    <path d="M146 30 C 110 48, 60 44, 6 20" />
-    <path d="M6 20 L 26 17 M6 20 L 17 36" />
+    <path d="M4 30 C 40 48, 90 44, 144 20" />
+    <path d="M144 20 L 124 17 M144 20 L 133 36" />
   </svg>
 );
 
@@ -49,17 +49,17 @@ export default function StorySection() {
 
         {t('about.dog.title') && (
           <div className="story__dog">
+            <div className="story__dog-note">
+              <ArrowRight className="story__arrow--dog" />
+              <p className="story__note">{t('about.dog.title')}</p>
+              {t('about.dog.note') && <p className="story__dog-text">{t('about.dog.note')}</p>}
+            </div>
             <img
               src="/images/shop-dog.jpg"
               alt="The shop dog standing on the shop floor"
               className="story__dog-img"
               loading="lazy"
             />
-            <div className="story__dog-note">
-              <ArrowLeft className="story__arrow--dog" />
-              <p className="story__note">{t('about.dog.title')}</p>
-              {t('about.dog.note') && <p className="story__dog-text">{t('about.dog.note')}</p>}
-            </div>
           </div>
         )}
       </div>

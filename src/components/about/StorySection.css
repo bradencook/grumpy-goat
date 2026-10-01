@@ -1,4 +1,4 @@
-/* Text starts right at the gutter so the arrow can reach across to the photo,
+/* Text starts right at the gutter so the arrow can reach toward the photo,
    and the portrait stretches to the text's full height so the note sits beside it */
 .story {
   align-items: stretch;
@@ -44,26 +44,26 @@
 
 .story__content .story__note--spencer {
   position: relative;
-  padding-left: 5rem;
+  padding-left: 5.25rem;
   margin-bottom: var(--space-lg);
 }
 
-/* Reaches back across the gutter and into the portrait */
+/* Reaches back into the gutter, stopping short of the portrait */
 .story__arrow--spencer-wide {
-  left: -5rem;
+  left: -1rem;
   top: 0.4rem;
-  width: 9.5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 3rem;
 }
 
 .story__arrow--spencer-narrow {
   display: none;
 }
 
-/* Tilted snapshot of the shop dog with a note pointing at it */
+/* Note on the left pointing at a tilted snapshot of the shop dog on the right */
 .story__dog {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   align-items: center;
   gap: var(--space-lg);
   margin-top: var(--space-xl);
@@ -77,19 +77,20 @@
   border: 6px solid var(--color-white);
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-lg);
-  transform: rotate(-3deg);
+  transform: rotate(3deg);
 }
 
 .story__dog-note {
   position: relative;
-  padding-left: 3.25rem;
+  padding-right: 4rem;
+  text-align: right;
 }
 
 .story__arrow--dog {
-  left: -2.25rem;
+  right: -0.5rem;
   top: 0.4rem;
-  width: 5rem;
-  height: 1.7rem;
+  width: 4rem;
+  height: 1.4rem;
 }
 
 .story__content .story__dog-text {
@@ -107,7 +108,7 @@
   }
 
   .story__content .story__note--spencer {
-    padding-left: 3.5rem;
+    padding-left: 3.25rem;
     padding-top: 0.6rem;
   }
 
@@ -118,25 +119,25 @@
   .story__arrow--spencer-narrow {
     display: block;
     left: 0.25rem;
-    top: -3.25rem;
-    width: 2.75rem;
-    height: 4.5rem;
+    top: -1.25rem;
+    width: 2.25rem;
+    height: 3.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .story__dog {
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
     gap: var(--space-md);
   }
 
   .story__dog-note {
-    padding-left: 2.5rem;
+    padding-right: 2.75rem;
   }
 
   .story__arrow--dog {
-    left: -1.5rem;
-    width: 3.75rem;
+    right: -0.25rem;
+    width: 2.75rem;
   }
 
   .story__dog-note .story__note {
